@@ -552,6 +552,12 @@ section:not(.section-top){
     color: #243976;
 }
 
+.message{
+    color: #FC443B;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 .review__text{
     margin-top: 10px;
     font-size: 16px;
