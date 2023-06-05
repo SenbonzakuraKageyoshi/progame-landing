@@ -48,6 +48,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 body: {
                     role: 'student',
                     id: null
+                },
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                    'Content-Security-Policy': 'upgrade-insecure-requests'
                 }
             })
 
@@ -108,6 +112,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 }),
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8',
+                    'Content-Security-Policy': 'upgrade-insecure-requests'
                 }
             })
         } catch (error) {
