@@ -48,10 +48,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 body: {
                     role: 'student',
                     id: null
-                },
-                headers: {
-                    'Content-type': 'application/json; charset=UTF-8',
-                    'Content-Security-Policy': 'upgrade-insecure-requests'
                 }
             })
 
@@ -97,6 +93,8 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     getCourses();
+
+    const form = document.querySelector('form');
     
     const sendRequest = async (telephone, email) => {
         try {
@@ -112,15 +110,13 @@ window.addEventListener('DOMContentLoaded', () => {
                 }),
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8',
-                    'Content-Security-Policy': 'upgrade-insecure-requests'
                 }
             })
         } catch (error) {
-            
+            console.log(error)
+            return form.innerHTML += `<p class="message">Не удалось отправить заявку</p>`
         }
     };
-
-    const form = document.querySelector('form');
 
     const validateForm = (e) => {
         e.preventDefault();
@@ -134,7 +130,9 @@ window.addEventListener('DOMContentLoaded', () => {
             return form.innerHTML += `<p class="message">Такой формат почты не поддерживается</p>`
         }else{
             sendRequest(telephoneValue, emailValue)
-            .then(() => console.log('Принято!'))
+            .then(() => {
+                return form.innerHTML += `<p class="message">Заявка отправлена!</p>`
+            })
         }
     };
 

@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta name="keywords" content="Progame, IT, IT-school">
+    <meta name="description" content="Школа Progame в Улан-Удэ"> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <meta http-equiv="content-language" content="ru">
+    <meta property="og:url" content="http://kaccelwi.beget.tech">
+    <meta property="og:description" content="Школа Progame в Улан-Удэ">
+    <meta property="og:title" content="Progame">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <title>Progame</title>
@@ -16,8 +24,8 @@
                 <div class="header__top">
                     <img src="./assets/images/logo.svg" alt="Progame лого" class="logo" width="180" height="50">
                     <div class="header__contacts">
-                        <a href="" class="telephone">8 (800) 300-37-91</a>
-                        <button data-to="section-form" class="formAnchor">Записаться на урок</button>
+                        <a href="tel:89834380398" class="telephone">8 (800) 300-37-91</a>
+                        <button data-to="section-form" class="formAnchor" id="anchor">Подать заявку на регистрацию</button>
                     </div>
                     <button class="menu__button open">
                         <img src="./assets/images/menu.svg" alt="Меню" class="menu-icon" width="17" height="14">
@@ -42,7 +50,7 @@
                     </a>
                     <div class="header__contacts">
                         <a href="" class="telephone">8 (800) 300-37-91</a>
-                        <button data-to="section-form" class="formAnchor" id="anchor">Записаться на урок</button>
+                        <button data-to="section-form" class="formAnchor" id="anchor">Подать заявку на регистрацию</button>
                     </div>
                 </div>
             </div>
@@ -50,19 +58,22 @@
         <div class="container">
             <div class="section-top__content">
                 <div class="section-top__intro">
-                    <h3 class="section-top__intro-title">Настоящая школа</br><span>у вас дома!</span></h3>
-                    <p class="section-top__intro__text">Мы даем детям реальные знания, потому наши классы не превышают 10 человек. А интерактивность и вовлеченность делает уроки интересными для детей.</p>
+                    <h3 class="section-top__intro-title">Профессиональные IT-курсы</br><span>по низкой цене!</span></h3>
+                    <p class="section-top__intro__text">Мы передлагаем большой спектр обучающих программ, изучив которые, Вы получите документ об окончании курса. Он позволяет получить дополнительные баллы при поступлении на учебу и самое главное - Вы получите множетво новых знаний и сможете их реализовать на деле! Для получения доступа к курсам, Вам потребуется подать заявку на регистрацию в личном кабинете Progame</p>
                     <div class="contactItems">
-                        <button data-to="section-form" class="formAnchor" id="anchor">Записаться на урок</button>
+                        <button data-to="section-form" class="formAnchor" id="anchor">Подать заявку на регистрацию</button>
                         <div class="socials">
                             <div>Или написать:</div>
                             <a href="">
                                 <img src="./assets/images/telegram.svg" alt="Телеграм" width="40" height="40">
                             </a>
+                            <a href="">
+                                <img src="./assets/images/watsapp.svg" alt="Ватсап" width="40" height="40">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <img src="./assets/images/section-top-intro-image.png" alt="Изображение главной секции" class="section-top-image" width="580" height="488">
+                <img src="./assets/images/section-top-intro-image.png" alt="Изображение главной секции" class="section-top-image" width="500" height="458">
             </div>
         </div>
     </section>
@@ -73,24 +84,27 @@
                 <div class="section-advantages__main">
                     <ul class="advantages__list">
                         <li class="advantages__list-item">
-                            <div class="advantages__list-item-name">Продвинутая геймификация</div>
-                            <p class="advantages__list-item-descr">Мы используем мини-игры чтобы увлечь ребенка в процесс решения задач и помочь усвоить материал в интересной форме</p>
+                            <div class="advantages__list-item-name">Большой набор обучающих программ</div>
+                            <p class="advantages__list-item-descr">Мы используем различные формы обучения и программы для обучения наших студентов, чтобы дать им максимальное колчиество знаний</p>
                         </li>
                         <li class="advantages__list-item">
-                            <div class="advantages__list-item-name">Продвинутая геймификация</div>
-                            <p class="advantages__list-item-descr">Мы используем мини-игры чтобы увлечь ребенка в процесс решения задач и помочь усвоить материал в интересной форме</p>
+                            <div class="advantages__list-item-name">Низкие цены</div>
+                            <p class="advantages__list-item-descr">Наши курсы имеют цену, в 2,5 раза ниже рыночной! Скорее приобретайте!</p>
                         </li>
                         <li class="advantages__list-item">
-                            <div class="advantages__list-item-name">Продвинутая геймификация</div>
-                            <p class="advantages__list-item-descr">Мы используем мини-игры чтобы увлечь ребенка в процесс решения задач и помочь усвоить материал в интересной форме</p>
+                            <div class="advantages__list-item-name">Ответственные преподаватели</div>
+                            <p class="advantages__list-item-descr">Каждый преподаватель в ответе за своего студента и готов заниматься с ним индвидуально в рамках курса</p>
                         </li>
                     </ul>
                     <div class="contactItems">
-                        <button data-to="section-form" class="formAnchor" id="anchor">Записаться на урок</button>
+                        <button data-to="section-form" class="formAnchor" id="anchor">Подать заявку на регистрацию</button>
                         <div class="socials">
                             <div>Или написать:</div>
                             <a href="">
                                 <img src="./assets/images/telegram.svg" alt="Телеграм" width="40" height="40">
+                            </a>
+                            <a href="">
+                                <img src="./assets/images/watsapp.svg" alt="Ватсап" width="40" height="40">
                             </a>
                         </div>
                     </div>
@@ -110,35 +124,35 @@
                 </li>
                 <li class="features__list-item">
                     <img src="./assets/images/features2.png" alt="Осообенность школы Progame" width="167" height="167">
-                    <div class="features__list-item-name">Удобный график занятий</div>
-                    <p class="features__list-item-descr">Вы можете выбрать удобное время начала занятий (9:00, 11:00 или 13:00)</p>
+                    <div class="features__list-item-name">Большое количство направлений</div>
+                    <p class="features__list-item-descr">От рисования до создания операционных систем</p>
                 </li>
                 <li class="features__list-item">
                     <img src="./assets/images/features3.png" alt="Осообенность школы Progame" width="167" height="167">
-                    <div class="features__list-item-name">Удобный график занятий</div>
-                    <p class="features__list-item-descr">Вы можете выбрать удобное время начала занятий (9:00, 11:00 или 13:00)</p>
+                    <div class="features__list-item-name">Меньше домашней работы</div>
+                    <p class="features__list-item-descr">Всю основную информацию Вы получаете во время уроков</p>
                 </li>
                 <li class="features__list-item">
                     <img src="./assets/images/features4.png" alt="Осообенность школы Progame" width="167" height="167">
-                    <div class="features__list-item-name">Удобный график занятий</div>
-                    <p class="features__list-item-descr">Вы можете выбрать удобное время начала занятий (9:00, 11:00 или 13:00)</p>
+                    <div class="features__list-item-name">Бесплатная канцелярия</div>
+                    <p class="features__list-item-descr">Даже после утери или поломки принадлежности выдадим новую</p>
                 </li>
                 <li class="features__list-item">
                     <img src="./assets/images/features5.png" alt="Осообенность школы Progame" width="167" height="167">
-                    <div class="features__list-item-name">Удобный график занятий</div>
-                    <p class="features__list-item-descr">Вы можете выбрать удобное время начала занятий (9:00, 11:00 или 13:00)</p>
+                    <div class="features__list-item-name">Бесплатная курс по Биологии</div>
+                    <p class="features__list-item-descr">Иногда стоит отвлечься от основной занятости</p>
                 </li>
                 <li class="features__list-item">
                     <img src="./assets/images/features6.png" alt="Осообенность школы Progame" width="167" height="167">
-                    <div class="features__list-item-name">Удобный график занятий</div>
-                    <p class="features__list-item-descr">Вы можете выбрать удобное время начала занятий (9:00, 11:00 или 13:00)</p>
+                    <div class="features__list-item-name">Мы помогам сэкономить</div>
+                    <p class="features__list-item-descr">Большое количество скидок и льгот</p>
                 </li>
             </ul>
         </div>
     </section>
     <section class="section-pricing">
         <div class="container">
-            <div class="section-title" style="text-align: center;">Сколько стоит обучение в Progame?</div>
+            <div class="section-title" style="text-align: center;">Какие курсы сейчас доступны в Progame?</div>
             <p class="loading">Загрузка...</p>
             <ul class="pricing__list">
             </ul>
@@ -148,10 +162,10 @@
         <div class="container">
             <div class="section-result__content">
                 <div class="section-result__main">
-                    <div class="section-result-name">Аттестат государственного образца</div>
-                    <p class="section-result-descr">Вы получите аттестат государственного образца. Он ничем не отличается от аттестата которые выдают в обычных школах.С аттестатом вы сможете продолжить обучение в лучших вузах страны. </p>
+                    <div class="section-result-name">Сертификат об прохождении обучения</div>
+                    <p class="section-result-descr">По окончании обучения вы получите сертификат об прохождении курсов программирования соответствующей дисциплины. С сертификатом вы сможете получить дополнительные баллы при поступлении в вуз на IT-профессию</p>
                 </div>
-                <img src="./assets/images/section-result-image.png" alt="Результат обучения" class="section-result-image" width="450" height="400">
+                <img src="./assets/images/sertificate.jpg" alt="Результат обучения" class="section-result-image" width="500" height="350">
             </div>
         </div>
     </section>
@@ -165,20 +179,20 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="review__wrapper">
-                                <div class="review__author">Анна Смирнова</div>
-                                <p class="review__text">Банальные, но неопровержимые выводы, а также непосредственные участники технического прогресса набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям. Имеется спорная точка зрения, гласящая примерно следующее: диаграммы.</p>
+                                <div class="review__author">Кудрявцев Марк (Курс 'Фронтенд-разработчик')</div>
+                                <p class="review__text">Нашел работу спустя несколько недель после окончания этого заведения. Всем советую!</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="review__wrapper">
-                                <div class="review__author">Анна Смирнова</div>
-                                <p class="review__text">Банальные, но неопровержимые выводы, а также непосредственные участники технического прогресса набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям. Имеется спорная точка зрения, гласящая примерно следующее: диаграммы.</p>
+                                <div class="review__author">Фролов Сергей (Курс 'Веб-дизайнер')</div>
+                                <p class="review__text">Здесь я смог научится воплощать свои творческие идеи, которые теперь помогают бизнесу и делают IT-сферу красивее :)</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="review__wrapper">
-                                <div class="review__author">Анна Смирнова</div>
-                                <p class="review__text">Банальные, но неопровержимые выводы, а также непосредственные участники технического прогресса набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям. Имеется спорная точка зрения, гласящая примерно следующее: диаграммы.</p>
+                                <div class="review__author">Ефимова Екатерина (Курс 'Data Scientist')</div>
+                                <p class="review__text">Резкая смена деятельности казалась для меня чем-то сложным, но в Progame делать это было приятно и интересно, каждый преподаватель невероятно компетентен и ответсвеннен</p>
                             </div>
                         </div>
                     </div>
@@ -195,7 +209,7 @@
             <div class="section-form__content">
                 <div class="section-form__text">
                     <div class="section-form__text-title">Скорее отправьте <span>заявку!</span></div>
-                    <p class="section-form__text">Количество мест, к сожалению, ограничено. Заявка будет рассмотрена в течении 24 часов, наши менеджеры свяжутся с Вами и окажут качественную консультацию</p>
+                    <p class="section-form__text">Заявка будет рассмотрена в течении 24 часов, наши менеджеры свяжутся с Вами и окажут качественную консультацию</p>
                     <img src="./assets/images/form-image.png" alt="Изображение формы заявки" class="section-form-image" width="485" height="320">
                 </div>
                 <form action="POST">
@@ -221,15 +235,18 @@
                     <a href="">
                         <img src="./assets/images/telegram.svg" alt="Телеграм" width="40" height="40">
                     </a>
+                    <a href="">
+                        <img src="./assets/images/watsapp.svg" alt="Ватсап" width="40" height="40">
+                    </a>
                 </div>
                 <div class="contacts">
                     <div class="contacts-item">
                         <img src="./assets/images/tel-dark.svg" alt="Телефон" width="46" height="46">
-                        <a href="" class="telephone">8 (800) 300-37-91</a>
+                        <a href="tel:89834380398" class="telephone">8 983 438 03 98</a>
                     </div>
                     <div class="contacts-item">
                         <img src="./assets/images/map.svg" alt="Адрес" width="46" height="46">
-                        <div>г. Дмитров, ул Московская, дом 23 </div>
+                        <div>г Улан-Удэ, ул. Цивилева 33, учебный центр "Перспектива"</div>
                     </div>
                 </div>
             </div>

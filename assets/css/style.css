@@ -703,6 +703,10 @@ input{
     display: block;
 }
 
+.socials a:nth-child(3){
+    margin-left: 10px;
+}
+
 .footer .socials div{
     margin-bottom: 10px;
 }
